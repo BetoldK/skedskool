@@ -11,10 +11,8 @@ var app = builder.Build();
 
 app.MapGet("/", async (QueueClient queueClient) =>
 {
-    // The original message as a string
     string originalMessage = $"API was visited at: {DateTime.UtcNow:o}";
     
-    // Encode the message to Base64
     byte[] messageBytes = Encoding.UTF8.GetBytes(originalMessage);
     string encodedMessage = System.Convert.ToBase64String(messageBytes);
 
