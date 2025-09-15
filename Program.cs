@@ -1,4 +1,5 @@
 using Azure.Storage.Queues;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +11,16 @@ var app = builder.Build();
 
 app.MapGet("/", async (QueueClient queueClient) =>
 {
-    string message = $"API was visited at: {DateTime.UtcNow:o}";
+    // The original message as a string
+    string originalMessage = $"API was visited at: {DateTime.UtcNow:o}";
+    
+    // Encode the message to Base64
+    byte[] messageBytes = Encoding.UTF8.GetBytes(originalMessage);
+    string encodedMessage = System.Convert.ToBase64String(messageBytes);
 
     await queueClient.CreateIfNotExistsAsync();
-    await queueClient.SendMessageAsync(message);
-    return $"✅ Message sent to the queue: '{message}'";
+    await queueClient.SendMessageAsync(encodedMessage);
+    return $"✅ Encoded message sent to the queue: '{encodedMessage}'";
 });
 
 app.Run();
