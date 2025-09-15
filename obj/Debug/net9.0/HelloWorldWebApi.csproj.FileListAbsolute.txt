@@ -30,3 +30,11 @@
 /Users/bertold/HelloWorldWebApi/obj/Debug/net9.0/HelloWorldWebApi.pdb
 /Users/bertold/HelloWorldWebApi/obj/Debug/net9.0/HelloWorldWebApi.genruntimeconfig.cache
 /Users/bertold/HelloWorldWebApi/obj/Debug/net9.0/ref/HelloWorldWebApi.dll
+/Users/bertold/HelloWorldWebApi/obj/Debug/net9.0/HelloWorldWebApi.sourcelink.json
+/Users/bertold/HelloWorldWebApi/bin/Debug/net9.0/Azure.Core.dll
+/Users/bertold/HelloWorldWebApi/bin/Debug/net9.0/Azure.Storage.Common.dll
+/Users/bertold/HelloWorldWebApi/bin/Debug/net9.0/Azure.Storage.Queues.dll
+/Users/bertold/HelloWorldWebApi/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/bertold/HelloWorldWebApi/bin/Debug/net9.0/System.ClientModel.dll
+/Users/bertold/HelloWorldWebApi/bin/Debug/net9.0/System.IO.Hashing.dll
+/Users/bertold/HelloWorldWebApi/bin/Debug/net9.0/System.Memory.Data.dll
