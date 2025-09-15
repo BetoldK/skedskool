@@ -52,4 +52,4 @@ jobs:
           app-name: 'SkedSkool'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3368A7CB28164A9F8989B780977068AB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BC343BD08732440DBF5BA2FFB9E1BE86 }}
