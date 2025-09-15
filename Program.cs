@@ -1,4 +1,3 @@
-using Azure.Storage.Queues;
 
 var builder = WebApplication.CreateBuilder(args);
 
